@@ -1,0 +1,94 @@
+<html>
+<style>
+                body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('pexels-pok-rie-2894260.jpg');
+    background-size: cover;
+    backdrop-filter: blur(80px);
+    height: 100vh;
+}
+
+nav {
+    background-color: transparent;
+    padding: 30px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+
+nav a:hover {
+    color: #ddd;
+}
+            form {
+                margin-top: 20px;
+                padding: 10px;
+            }
+
+            label {
+                display: block;
+                margin-top: 10px;
+            }
+
+            input[type="text"], input[type="email"], textarea {
+                width: 90%;
+                padding: 10px;
+                margin-top: 5px;
+                border-radius: 10px;
+                border: none;
+            }
+
+            input[type="submit"] {
+                background-color: #9c9562;
+                color: white;
+                padding: 20px 40px;
+                margin-top: 10px;
+                border: none;
+                cursor: pointer;
+                font-size: 16px;
+                border-radius: 10px;
+            }
+
+            input[type="submit"]:hover {
+                background-color: #e3de84;
+            }
+</style>
+<body>
+<nav>
+    <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="project.html">Project</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+<section id="contact" style="margin-left: 2%;">
+    <h1 style="padding: 10px;">Contact Me</h1>
+    <form action="result.html">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br>
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message"></textarea><br>
+        <a href="result.html"><input type="submit" value="Submit" style="background-color: aquamarine;color: black;"></a>
+    </form>
+</section>
+
+</body>
+</html>
